@@ -1,0 +1,204 @@
+.menu-iniziale {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--verde);
+  border-radius: 1rem;
+}
+
+.menu-opzioni {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-button {
+  height: 70px;
+  width: 200px;
+  border-radius: 1rem;
+}
+
+.cartella-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.cartella-container-content {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartella-title {
+  font-size: 4rem;
+}
+
+.cartelle-griglia {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cartella-titolo {
+  color: var(--bianco);
+  text-align: center;
+  margin: 1rem;
+}
+
+.cartella-tabella {
+  display: grid;
+  grid-template-rows: 3, 1fr;
+  gap: 6px;
+  background-color: var(--verde);
+  padding: 1rem;
+  border-radius: 8px;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
+}
+
+.cartella-riga {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 5px;
+}
+
+.cartella-cella {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bianco);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cartella-cella:not(:empty) {
+  background-color: var(--bianco-secondario);
+  color: var(--rosso-secondario);
+}
+
+.cartella-cella.cella-coperta {
+  background-color: var(--rosso-secondario);
+  color: var(--bianco);
+  text-decoration: line-through;
+}
+
+.cartella-cella:not(:empty):hover {
+  background-color: var(--grigio);
+  color: var(--bianco);
+}
+
+.genera-btn {
+  width: 200px;
+  height: 100px;
+}
+
+.messaggio-traguardo {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bianco);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--nero);
+  z-index: 1000;
+  animation: fadeOut 3s forwards;
+  text-align: center;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .cartella-cella {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .cartella-title {
+    font-size: 3rem;
+  }
+
+  .cartella-tabella {
+    display: grid;
+    grid-template-rows: 3, 1fr;
+    gap: 5px;
+    padding: 4px;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .cartella-titolo {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+
+  .genera-btn {
+    width: 200px;
+    height: 100px;
+  }
+
+  .cartella-cella {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .cartella-cella {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .cartella-cella {
+    width: 27px;
+    height: 27px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 305px) {
+  .cartella-cella {
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+  }
+}

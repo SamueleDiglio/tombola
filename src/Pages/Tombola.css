@@ -1,0 +1,173 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.tombola-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tombola-container-content {
+  width: 100%;
+  background-color: var(--verde);
+  padding: 2rem;
+  border-radius: 8px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
+}
+
+.casella {
+  border: solid 1px var(--verde);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.casella h1 {
+  font-size: 2rem;
+}
+
+.elenco-numeri {
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  background-color: var(--verde);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
+}
+
+.numero-disponibile {
+  background-color: var(--bianco);
+  color: var(--rosso-primario);
+}
+
+.numero-estratto {
+  background-color: var(--rosso-secondario);
+}
+
+.btn {
+  height: 200px;
+  width: 600px;
+}
+
+@media (max-width: 1300px) {
+  .tombola-container {
+    height: auto;
+  }
+
+  section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .tombola-container-content {
+    width: 527px;
+  }
+
+  .btn {
+    height: 100px;
+    width: 300px;
+  }
+
+  .casella {
+    width: 55px;
+    height: 55px;
+  }
+
+  .casella h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .tombola-container-content {
+    width: 410px;
+  }
+
+  .btn {
+    height: 100px;
+    width: 300px;
+  }
+
+  .casella {
+    width: 42px;
+    height: 42px;
+  }
+
+  .casella h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .tombola-container-content {
+    width: 365px;
+  }
+
+  .btn {
+    height: 70px;
+    width: 270px;
+  }
+
+  .casella {
+    width: 37px;
+    height: 37px;
+  }
+
+  .casella h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .tombola-container-content {
+    width: 302px;
+  }
+
+  .btn {
+    height: 70px;
+    width: 250px;
+  }
+
+  .casella {
+    width: 30px;
+    height: 30px;
+  }
+
+  .casella h1 {
+    font-size: 1rem;
+  }
+}
