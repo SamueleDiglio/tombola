@@ -1,10 +1,15 @@
 .home-container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 1rem;
 }
 
 .home-container-content {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   top: 0;
   bottom: 0;
   left: 0;
@@ -15,7 +20,11 @@
   padding: 2rem;
   border-radius: 8px;
   margin: auto;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
+  box-shadow: 8px 8px 6px rgba(36, 35, 35, 0.459), -6px -6px 6px rgba(201, 199, 199, 0.445) ;
+}
+
+.link {
+  width: 100%;
 }
 
 .linkContainer {
@@ -28,50 +37,4 @@
 
 button {
   height: 100px;
-}
-
-@media (max-width: 720px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  button {
-    height: 100px;
-  }
-}
-
-@media (max-width: 425px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  .home-container {
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 350px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  button {
-    width: 200px;
-  }
-
-  .home-container {
-    padding: 1rem;
-  }
 }

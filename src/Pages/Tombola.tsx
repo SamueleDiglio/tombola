@@ -24,7 +24,7 @@ const Tombola = () => {
 
   return (
     <>
-      <section>
+      <section className="pad">
         <div className="tombola-container">
           <div className="tombola-container-content">
             <h1>{ultimoNumero}</h1>
